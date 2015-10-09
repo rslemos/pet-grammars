@@ -52,6 +52,11 @@ public class AETUnitTest {
 			)));
 	}
 
+	@Test
+	public void benchmark() throws Exception {
+		AETBenchmark.main(new String[0]);
+	}
+
 	public static String join(String... lines) {
 		StringBuilder result = new StringBuilder();
 		
