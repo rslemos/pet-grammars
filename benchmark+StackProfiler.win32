@@ -1,0 +1,638 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building antlr-explicit-tree 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ antlr-explicit-tree ---
+[INFO] Deleting D:\Users\rlemo\workspace\pessoal\antlr-explicit-tree\target
+[INFO] 
+[INFO] --- antlr4-maven-plugin:4.5.1:antlr4 (default) @ antlr-explicit-tree ---
+[INFO] ANTLR 4: Processing source directory D:\Users\rlemo\workspace\pessoal\antlr-explicit-tree\src\main\antlr4
+[INFO] Processing grammar: br\eti\rslemos\aet\AETGrammar.g4
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ antlr-explicit-tree ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory D:\Users\rlemo\workspace\pessoal\antlr-explicit-tree\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ antlr-explicit-tree ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to D:\Users\rlemo\workspace\pessoal\antlr-explicit-tree\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ antlr-explicit-tree ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory D:\Users\rlemo\workspace\pessoal\antlr-explicit-tree\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ antlr-explicit-tree ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to D:\Users\rlemo\workspace\pessoal\antlr-explicit-tree\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.10:test (default-test) @ antlr-explicit-tree ---
+[INFO] Surefire report directory: D:\Users\rlemo\workspace\pessoal\antlr-explicit-tree\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running br.eti.rslemos.aet.AETUnitTest
+# JMH 1.11.1 (released 14 days ago)
+# VM version: JDK 1.8.0_25, VM 25.25-b02
+# VM invoker: C:\Java\jdk1.8.0_25\bin\java.exe
+# VM options: <none>
+# Warmup: 40 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: br.eti.rslemos.aet.AETBenchmark.compile
+# Parameters: (buildHierarchy = true, source = TOPLEVELONLY)
+
+# Run progress: 0,00% complete, ETA 00:04:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 68183,210 ops/s
+# Warmup Iteration   2: 93448,457 ops/s
+# Warmup Iteration   3: 102757,328 ops/s
+# Warmup Iteration   4: 108674,434 ops/s
+# Warmup Iteration   5: 108904,501 ops/s
+# Warmup Iteration   6: 107902,984 ops/s
+# Warmup Iteration   7: 109415,880 ops/s
+# Warmup Iteration   8: 107625,051 ops/s
+# Warmup Iteration   9: 106253,443 ops/s
+# Warmup Iteration  10: 104633,125 ops/s
+# Warmup Iteration  11: 104467,787 ops/s
+# Warmup Iteration  12: 105516,435 ops/s
+# Warmup Iteration  13: 107882,321 ops/s
+# Warmup Iteration  14: 107640,283 ops/s
+# Warmup Iteration  15: 107549,420 ops/s
+# Warmup Iteration  16: 108212,400 ops/s
+# Warmup Iteration  17: 107645,070 ops/s
+# Warmup Iteration  18: 107643,522 ops/s
+# Warmup Iteration  19: 107966,969 ops/s
+# Warmup Iteration  20: 105970,072 ops/s
+# Warmup Iteration  21: 109005,870 ops/s
+# Warmup Iteration  22: 108590,144 ops/s
+# Warmup Iteration  23: 108050,008 ops/s
+# Warmup Iteration  24: 107788,610 ops/s
+# Warmup Iteration  25: 107689,415 ops/s
+# Warmup Iteration  26: 107248,359 ops/s
+# Warmup Iteration  27: 105593,020 ops/s
+# Warmup Iteration  28: 108248,751 ops/s
+# Warmup Iteration  29: 107757,879 ops/s
+# Warmup Iteration  30: 107470,275 ops/s
+# Warmup Iteration  31: 107377,640 ops/s
+# Warmup Iteration  32: 106747,666 ops/s
+# Warmup Iteration  33: 105706,216 ops/s
+# Warmup Iteration  34: 106533,867 ops/s
+# Warmup Iteration  35: 105976,595 ops/s
+# Warmup Iteration  36: 106930,901 ops/s
+# Warmup Iteration  37: 106941,640 ops/s
+# Warmup Iteration  38: 106626,928 ops/s
+# Warmup Iteration  39: 107282,162 ops/s
+# Warmup Iteration  40: 107113,844 ops/s
+Iteration   1: 106508,881 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   2: 106885,569 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   3: 107553,278 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   4: 106864,045 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   5: 103257,958 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   6: 108482,983 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   7: 108050,819 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   8: 108130,594 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   9: 106144,365 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  10: 107424,602 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  11: 107203,877 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  12: 106754,838 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  13: 107094,587 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  14: 105948,351 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  15: 106243,879 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  16: 106513,136 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  17: 105722,505 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  18: 106153,786 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  19: 106717,541 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  20: 106305,928 ops/s
+                 ·stack: <delayed till summary>
+
+
+
+Result "compile":
+  106698,076 ±(99.9%) 959,288 ops/s [Average]
+  (min, avg, max) = (103257,958, 106698,076, 108482,983), stdev = 1104,718
+  CI (99.9%): [105738,788, 107657,365] (assumes normal distribution)
+
+Secondary result "·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+100,0%         RUNNABLE
+
+....[Thread state: RUNNABLE]........................................................................
+ 26,7%  26,8% org.antlr.v4.runtime.atn.LexerATNSimulator.execATN
+ 14,0%  14,0% org.antlr.v4.runtime.BufferedTokenStream.consume
+  9,8%   9,8% org.antlr.v4.runtime.BufferedTokenStream.nextTokenOnChannel
+  8,1%   8,1% org.antlr.v4.runtime.atn.ParserATNSimulator.adaptivePredict
+  7,2%   7,2% org.antlr.v4.runtime.ANTLRInputStream.load
+  5,2%   5,2% org.antlr.v4.runtime.atn.SemanticContext$Predicate.eval
+  4,5%   4,5% org.antlr.v4.runtime.Lexer.nextToken
+  3,5%   3,5% br.eti.rslemos.aet.AETGrammarParser.root
+  3,3%   3,3% org.antlr.v4.runtime.atn.LexerActionExecutor.execute
+  3,0%   3,0% java.util.concurrent.locks.AbstractOwnableSynchronizer.<init>
+ 14,5%  14,5% <other>
+
+
+
+# JMH 1.11.1 (released 14 days ago)
+# VM version: JDK 1.8.0_25, VM 25.25-b02
+# VM invoker: C:\Java\jdk1.8.0_25\bin\java.exe
+# VM options: <none>
+# Warmup: 40 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: br.eti.rslemos.aet.AETBenchmark.compile
+# Parameters: (buildHierarchy = true, source = DEEPTREE)
+
+# Run progress: 25,00% complete, ETA 00:03:01
+# Fork: 1 of 1
+# Warmup Iteration   1: 82,273 ops/s
+# Warmup Iteration   2: 531,231 ops/s
+# Warmup Iteration   3: 747,922 ops/s
+# Warmup Iteration   4: 809,243 ops/s
+# Warmup Iteration   5: 811,392 ops/s
+# Warmup Iteration   6: 809,488 ops/s
+# Warmup Iteration   7: 815,928 ops/s
+# Warmup Iteration   8: 802,071 ops/s
+# Warmup Iteration   9: 795,596 ops/s
+# Warmup Iteration  10: 810,839 ops/s
+# Warmup Iteration  11: 804,813 ops/s
+# Warmup Iteration  12: 796,882 ops/s
+# Warmup Iteration  13: 816,089 ops/s
+# Warmup Iteration  14: 818,947 ops/s
+# Warmup Iteration  15: 819,495 ops/s
+# Warmup Iteration  16: 810,679 ops/s
+# Warmup Iteration  17: 808,279 ops/s
+# Warmup Iteration  18: 804,995 ops/s
+# Warmup Iteration  19: 812,986 ops/s
+# Warmup Iteration  20: 823,351 ops/s
+# Warmup Iteration  21: 821,619 ops/s
+# Warmup Iteration  22: 819,031 ops/s
+# Warmup Iteration  23: 815,716 ops/s
+# Warmup Iteration  24: 818,567 ops/s
+# Warmup Iteration  25: 812,451 ops/s
+# Warmup Iteration  26: 809,141 ops/s
+# Warmup Iteration  27: 795,715 ops/s
+# Warmup Iteration  28: 807,674 ops/s
+# Warmup Iteration  29: 807,807 ops/s
+# Warmup Iteration  30: 807,131 ops/s
+# Warmup Iteration  31: 811,926 ops/s
+# Warmup Iteration  32: 817,494 ops/s
+# Warmup Iteration  33: 813,940 ops/s
+# Warmup Iteration  34: 814,389 ops/s
+# Warmup Iteration  35: 815,890 ops/s
+# Warmup Iteration  36: 797,669 ops/s
+# Warmup Iteration  37: 821,976 ops/s
+# Warmup Iteration  38: 819,284 ops/s
+# Warmup Iteration  39: 819,056 ops/s
+# Warmup Iteration  40: 812,696 ops/s
+Iteration   1: 812,448 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   2: 812,718 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   3: 810,697 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   4: 813,389 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   5: 799,362 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   6: 822,898 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   7: 813,784 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   8: 813,437 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   9: 812,797 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  10: 814,470 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  11: 819,525 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  12: 815,486 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  13: 811,975 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  14: 807,524 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  15: 814,530 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  16: 816,508 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  17: 820,167 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  18: 820,225 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  19: 809,668 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  20: 816,917 ops/s
+                 ·stack: <delayed till summary>
+
+
+
+Result "compile":
+  813,926 ±(99.9%) 4,455 ops/s [Average]
+  (min, avg, max) = (799,362, 813,926, 822,898), stdev = 5,130
+  CI (99.9%): [809,471, 818,381] (assumes normal distribution)
+
+Secondary result "·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 99,9%         RUNNABLE
+  0,1%         WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 29,1%  29,1% org.antlr.v4.runtime.atn.ParserATNSimulator.getEpsilonTarget
+ 20,9%  20,9% org.antlr.v4.runtime.atn.ParserATNSimulator.closure_
+  8,7%   8,7% java.util.Arrays.equals
+  4,9%   4,9% org.antlr.v4.runtime.atn.PredictionContext.mergeArrays
+  4,8%   4,8% org.antlr.v4.runtime.atn.ParserATNSimulator.closureCheckingStopState
+  4,3%   4,3% org.antlr.v4.runtime.atn.ParserATNSimulator.computeReachSet
+  4,0%   4,0% java.util.HashMap.getNode
+  3,5%   3,5% org.antlr.v4.runtime.atn.SingletonPredictionContext.equals
+  2,7%   2,7% org.antlr.v4.runtime.atn.PredictionContext.merge
+  2,7%   2,7% java.util.HashMap.putVal
+ 14,2%  14,3% <other>
+
+....[Thread state: WAITING].........................................................................
+  0,1% 100,0% sun.misc.Unsafe.park
+
+
+
+# JMH 1.11.1 (released 14 days ago)
+# VM version: JDK 1.8.0_25, VM 25.25-b02
+# VM invoker: C:\Java\jdk1.8.0_25\bin\java.exe
+# VM options: <none>
+# Warmup: 40 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: br.eti.rslemos.aet.AETBenchmark.compile
+# Parameters: (buildHierarchy = false, source = TOPLEVELONLY)
+
+# Run progress: 50,00% complete, ETA 00:02:01
+# Fork: 1 of 1
+# Warmup Iteration   1: 75293,857 ops/s
+# Warmup Iteration   2: 105468,550 ops/s
+# Warmup Iteration   3: 109741,270 ops/s
+# Warmup Iteration   4: 109526,099 ops/s
+# Warmup Iteration   5: 109377,018 ops/s
+# Warmup Iteration   6: 108821,794 ops/s
+# Warmup Iteration   7: 108233,591 ops/s
+# Warmup Iteration   8: 108579,398 ops/s
+# Warmup Iteration   9: 106142,402 ops/s
+# Warmup Iteration  10: 109495,039 ops/s
+# Warmup Iteration  11: 109398,734 ops/s
+# Warmup Iteration  12: 109348,509 ops/s
+# Warmup Iteration  13: 108945,088 ops/s
+# Warmup Iteration  14: 108749,357 ops/s
+# Warmup Iteration  15: 108015,097 ops/s
+# Warmup Iteration  16: 106730,667 ops/s
+# Warmup Iteration  17: 106509,454 ops/s
+# Warmup Iteration  18: 106175,788 ops/s
+# Warmup Iteration  19: 106339,195 ops/s
+# Warmup Iteration  20: 106981,555 ops/s
+# Warmup Iteration  21: 107987,771 ops/s
+# Warmup Iteration  22: 108103,863 ops/s
+# Warmup Iteration  23: 107516,463 ops/s
+# Warmup Iteration  24: 105468,829 ops/s
+# Warmup Iteration  25: 105844,278 ops/s
+# Warmup Iteration  26: 106660,630 ops/s
+# Warmup Iteration  27: 107064,747 ops/s
+# Warmup Iteration  28: 107142,703 ops/s
+# Warmup Iteration  29: 106517,874 ops/s
+# Warmup Iteration  30: 108820,531 ops/s
+# Warmup Iteration  31: 108780,991 ops/s
+# Warmup Iteration  32: 108602,652 ops/s
+# Warmup Iteration  33: 108600,557 ops/s
+# Warmup Iteration  34: 108751,083 ops/s
+# Warmup Iteration  35: 106836,093 ops/s
+# Warmup Iteration  36: 109449,376 ops/s
+# Warmup Iteration  37: 110192,103 ops/s
+# Warmup Iteration  38: 109126,630 ops/s
+# Warmup Iteration  39: 109383,722 ops/s
+# Warmup Iteration  40: 109169,180 ops/s
+Iteration   1: 108344,891 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   2: 108588,413 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   3: 108193,314 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   4: 107196,856 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   5: 106646,915 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   6: 106676,978 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   7: 106806,581 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   8: 107034,966 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   9: 106154,399 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  10: 107501,922 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  11: 104596,921 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  12: 105064,722 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  13: 105743,514 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  14: 107901,648 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  15: 107694,404 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  16: 108956,439 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  17: 109282,328 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  18: 109123,144 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  19: 108240,796 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  20: 107460,838 ops/s
+                 ·stack: <delayed till summary>
+
+
+
+Result "compile":
+  107360,500 ±(99.9%) 1129,044 ops/s [Average]
+  (min, avg, max) = (104596,921, 107360,500, 109282,328), stdev = 1300,209
+  CI (99.9%): [106231,455, 108489,544] (assumes normal distribution)
+
+Secondary result "·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 99,9%         RUNNABLE
+
+....[Thread state: RUNNABLE]........................................................................
+ 27,3%  27,3% org.antlr.v4.runtime.atn.LexerATNSimulator.execATN
+ 11,5%  11,5% org.antlr.v4.runtime.BufferedTokenStream.consume
+  9,7%   9,7% org.antlr.v4.runtime.BufferedTokenStream.nextTokenOnChannel
+  7,8%   7,8% org.antlr.v4.runtime.atn.ParserATNSimulator.adaptivePredict
+  7,6%   7,6% org.antlr.v4.runtime.ANTLRInputStream.load
+  5,8%   5,8% org.antlr.v4.runtime.atn.SemanticContext$Predicate.eval
+  4,8%   4,8% org.antlr.v4.runtime.Lexer.nextToken
+  4,1%   4,1% br.eti.rslemos.aet.AETGrammarParser.root
+  3,4%   3,4% org.antlr.v4.runtime.Parser.match
+  3,1%   3,1% org.antlr.v4.runtime.atn.LexerActionExecutor.execute
+ 14,7%  14,7% <other>
+
+
+
+# JMH 1.11.1 (released 14 days ago)
+# VM version: JDK 1.8.0_25, VM 25.25-b02
+# VM invoker: C:\Java\jdk1.8.0_25\bin\java.exe
+# VM options: <none>
+# Warmup: 40 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: br.eti.rslemos.aet.AETBenchmark.compile
+# Parameters: (buildHierarchy = false, source = DEEPTREE)
+
+# Run progress: 75,00% complete, ETA 00:01:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 74770,293 ops/s
+# Warmup Iteration   2: 102242,546 ops/s
+# Warmup Iteration   3: 107453,567 ops/s
+# Warmup Iteration   4: 107215,442 ops/s
+# Warmup Iteration   5: 107408,973 ops/s
+# Warmup Iteration   6: 106447,090 ops/s
+# Warmup Iteration   7: 107854,103 ops/s
+# Warmup Iteration   8: 107458,725 ops/s
+# Warmup Iteration   9: 106108,503 ops/s
+# Warmup Iteration  10: 107717,227 ops/s
+# Warmup Iteration  11: 107726,475 ops/s
+# Warmup Iteration  12: 107986,065 ops/s
+# Warmup Iteration  13: 107395,568 ops/s
+# Warmup Iteration  14: 107524,115 ops/s
+# Warmup Iteration  15: 107158,709 ops/s
+# Warmup Iteration  16: 105219,711 ops/s
+# Warmup Iteration  17: 102905,491 ops/s
+# Warmup Iteration  18: 104909,593 ops/s
+# Warmup Iteration  19: 107039,461 ops/s
+# Warmup Iteration  20: 107124,369 ops/s
+# Warmup Iteration  21: 106420,805 ops/s
+# Warmup Iteration  22: 105249,205 ops/s
+# Warmup Iteration  23: 106033,893 ops/s
+# Warmup Iteration  24: 105044,297 ops/s
+# Warmup Iteration  25: 107010,662 ops/s
+# Warmup Iteration  26: 106861,862 ops/s
+# Warmup Iteration  27: 106005,309 ops/s
+# Warmup Iteration  28: 106742,432 ops/s
+# Warmup Iteration  29: 106673,766 ops/s
+# Warmup Iteration  30: 106109,766 ops/s
+# Warmup Iteration  31: 106129,751 ops/s
+# Warmup Iteration  32: 105914,070 ops/s
+# Warmup Iteration  33: 106163,932 ops/s
+# Warmup Iteration  34: 106111,864 ops/s
+# Warmup Iteration  35: 103628,771 ops/s
+# Warmup Iteration  36: 105980,562 ops/s
+# Warmup Iteration  37: 99930,067 ops/s
+# Warmup Iteration  38: 106811,252 ops/s
+# Warmup Iteration  39: 107005,119 ops/s
+# Warmup Iteration  40: 107472,916 ops/s
+Iteration   1: 106323,608 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   2: 105991,301 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   3: 106226,049 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   4: 105884,602 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   5: 105267,138 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   6: 105666,220 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   7: 105953,947 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   8: 105121,869 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration   9: 105956,845 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  10: 105553,639 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  11: 104959,775 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  12: 105400,586 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  13: 105558,242 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  14: 106305,118 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  15: 105598,630 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  16: 105105,559 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  17: 105325,095 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  18: 105409,870 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  19: 105109,678 ops/s
+                 ·stack: <delayed till summary>
+
+Iteration  20: 106115,793 ops/s
+                 ·stack: <delayed till summary>
+
+
+
+Result "compile":
+  105641,678 ±(99.9%) 374,010 ops/s [Average]
+  (min, avg, max) = (104959,775, 105641,678, 106323,608), stdev = 430,711
+  CI (99.9%): [105267,668, 106015,688] (assumes normal distribution)
+
+Secondary result "·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 99,9%         RUNNABLE
+  0,1%         WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 26,0%  26,1% org.antlr.v4.runtime.atn.LexerATNSimulator.execATN
+ 13,0%  13,0% org.antlr.v4.runtime.BufferedTokenStream.consume
+ 10,2%  10,2% org.antlr.v4.runtime.BufferedTokenStream.nextTokenOnChannel
+  9,2%   9,2% org.antlr.v4.runtime.atn.ParserATNSimulator.adaptivePredict
+  7,1%   7,1% org.antlr.v4.runtime.ANTLRInputStream.load
+  5,0%   5,0% org.antlr.v4.runtime.atn.SemanticContext$Predicate.eval
+  4,5%   4,5% org.antlr.v4.runtime.Lexer.nextToken
+  3,6%   3,6% org.antlr.v4.runtime.atn.LexerActionExecutor.execute
+  3,3%   3,3% java.util.concurrent.locks.AbstractOwnableSynchronizer.<init>
+  3,1%   3,1% org.antlr.v4.runtime.CommonTokenStream.LB
+ 14,8%  14,8% <other>
+
+....[Thread state: WAITING].........................................................................
+  0,1% 100,0% sun.misc.Unsafe.park
+
+
+
+# Run complete. Total time: 00:04:02
+
+Benchmark                    (buildHierarchy)      (source)   Mode  Cnt       Score      Error  Units
+AETBenchmark.compile                     true  TOPLEVELONLY  thrpt   20  106698,076 ±  959,288  ops/s
+AETBenchmark.compile:·stack              true  TOPLEVELONLY  thrpt              NaN               ---
+AETBenchmark.compile                     true      DEEPTREE  thrpt   20     813,926 ±    4,455  ops/s
+AETBenchmark.compile:·stack              true      DEEPTREE  thrpt              NaN               ---
+AETBenchmark.compile                    false  TOPLEVELONLY  thrpt   20  107360,500 ± 1129,044  ops/s
+AETBenchmark.compile:·stack             false  TOPLEVELONLY  thrpt              NaN               ---
+AETBenchmark.compile                    false      DEEPTREE  thrpt   20  105641,678 ±  374,010  ops/s
+AETBenchmark.compile:·stack             false      DEEPTREE  thrpt              NaN               ---
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 243.05 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4:07.896s
+[INFO] Finished at: Fri Oct 09 15:31:54 BRT 2015
+[INFO] Final Memory: 20M/172M
+[INFO] ------------------------------------------------------------------------
