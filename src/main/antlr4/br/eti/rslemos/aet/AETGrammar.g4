@@ -34,21 +34,5 @@ item:
 
 head returns[int level]:
     LEVEL { $level = $LEVEL.int; }
-    (NAME | 'NONAME') optionalClause1? optionalClause2? (alternativeClause1 | alternativeClause2)?
-	;
-
-optionalClause1:
-	'OPTIONAL' 'CLAUSE' 'ONE'
-	;
-
-optionalClause2:
-	'OPTIONAL' 'CLAUSE' 'TWO'
-	;
-
-alternativeClause1:
-	'ALTERNATIVE' 'CLAUSE' 'ONE'
-	;
-
-alternativeClause2:
-	'ALTERNATIVE' 'CLAUSE' 'TWO'
+    NAME
 	;
