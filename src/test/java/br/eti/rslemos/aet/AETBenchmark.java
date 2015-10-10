@@ -5,6 +5,8 @@ import org.openjdk.jmh.annotations.Param;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.annotations.Warmup;
+import org.openjdk.jmh.profile.CompilerProfiler;
+import org.openjdk.jmh.profile.LinuxPerfAsmProfiler;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.options.Options;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
@@ -69,7 +71,7 @@ public class AETBenchmark {
 		Options opts = new OptionsBuilder()
 			.include(AETBenchmark.class.getSimpleName())
 			.forks(1)
-			.addProfiler(org.openjdk.jmh.profile.StackProfiler.class)
+			.addProfiler(LinuxPerfAsmProfiler.class)
 			.build();
 		
 		new Runner(opts).run();

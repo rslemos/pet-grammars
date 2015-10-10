@@ -7,7 +7,9 @@
 <listEntry value="1"/>
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
+<stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/java-7-openjdk-amd64"/>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="br.eti.rslemos.aet.AETBenchmark"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-XX:PrintAssemblyOptions=intel,mpad=10,cpad=10,code&#10;-XX:+PrintCompilation -verbose:gc -Xbatch -XX:CICompilerCount=1&#10;-XX:+UnlockDiagnosticVMOptions -XX:+PrintAssembly &#10;-XX:+LogCompilation"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="antlr-explicit-tree"/>
 <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
 </launchConfiguration>
