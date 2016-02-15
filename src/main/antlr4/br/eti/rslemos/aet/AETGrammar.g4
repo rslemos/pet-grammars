@@ -27,7 +27,7 @@ root: item*;
 item:
 	head
     (
-        { Integer.parseInt(getCurrentToken().getText()) > $head.level && buildHierarchy }?
+        { buildHierarchy && Integer.parseInt(getCurrentToken().getText()) > $head.level }?
         item
     )*
     ;

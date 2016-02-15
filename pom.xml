@@ -45,6 +45,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -68,6 +69,22 @@
 					<execution>
 						<goals>
 							<goal>antlr4</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>us.bryon</groupId>
+				<artifactId>graphviz-maven-plugin</artifactId>
+				<version>1.0</version>
+				<configuration>
+					<basedir>target/generated-sources/antlr4</basedir>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>dot</goal>
 						</goals>
 					</execution>
 				</executions>
