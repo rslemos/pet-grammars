@@ -1,7 +1,9 @@
 grammar AETGrammar;
 
-@members {
+@parser::members {
 	public boolean buildHierarchy = true;
+	public boolean guardExit = false;
+	public boolean guardExitShortCircuit = false;
 	
 	public static AETGrammarParser getParser(String source) {
 		try {
@@ -14,7 +16,15 @@ grammar AETGrammar;
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
-	}	
+	}
+	
+	public int nextTokenAsIntegerOr(int def) {
+		try {
+			return Integer.parseInt(getCurrentToken().getText());
+		} catch (NumberFormatException e) {
+			return def;
+		}
+	}
 }
 
 WS : (' '|'\n') -> channel(HIDDEN);
@@ -22,16 +32,17 @@ WS : (' '|'\n') -> channel(HIDDEN);
 LEVEL : [0-9]+;
 NAME : [-A-Za-z0-9]+;
 
-root: item* trailing?;
+root: item* trailing?;	
 
 trailing: 'TRAILING' (LEVEL | NAME)*;
 
 item:
 	head
     (
-        { buildHierarchy && Integer.parseInt(getCurrentToken().getText()) > $head.level }?
+        { buildHierarchy && nextTokenAsIntegerOr(-1) > $head.level }?
         item
     )*
+    { !guardExitShortCircuit || !(buildHierarchy && nextTokenAsIntegerOr(-1) > $head.level) || !guardExit }?
     ;
 
 head returns[int level]:

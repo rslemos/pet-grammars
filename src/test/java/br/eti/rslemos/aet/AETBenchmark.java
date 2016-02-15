@@ -258,6 +258,12 @@ public class AETBenchmark {
 	
 	@Param({"true", "false"})
 	public boolean buildHierarchy;
+
+	@Param({"true", "false"})
+	public boolean guardExit;
+	
+	@Param({"true", "false"})
+	public boolean guardExitShortCircuit;
 	
 	@Param({"TOPLEVELONLY", "DEEPTREE", "VERYDEEPTREE", "VERYLONGTREE"})
 	public Source source;
@@ -267,6 +273,8 @@ public class AETBenchmark {
 	public RootContext compile() {
 		AETGrammarParser parser = AETGrammarParser.getParser(source.text);
 		parser.buildHierarchy = buildHierarchy;
+		parser.guardExit = guardExit;
+		parser.guardExitShortCircuit = guardExitShortCircuit;
 		return parser.root();
 	}
 

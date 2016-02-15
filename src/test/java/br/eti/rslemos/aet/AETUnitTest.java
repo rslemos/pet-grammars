@@ -4,6 +4,8 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
+import org.antlr.v4.runtime.ConsoleErrorListener;
+import org.antlr.v4.runtime.DiagnosticErrorListener;
 import org.junit.Test;
 
 import br.eti.rslemos.aet.AETGrammarParser.RootContext;
@@ -29,6 +31,10 @@ public class AETUnitTest {
 			);
 		
 		AETGrammarParser parser = AETGrammarParser.getParser(source);
+		parser.addErrorListener(new DiagnosticErrorListener(false));
+		parser.addErrorListener(new ConsoleErrorListener());
+		parser.buildHierarchy = true;
+		parser.guardExit = true;
 		RootContext root = parser.root();
 		
 		assertThat(root.toStringTree(parser), is(equalTo(
