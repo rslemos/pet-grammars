@@ -22,7 +22,9 @@ WS : (' '|'\n') -> channel(HIDDEN);
 LEVEL : [0-9]+;
 NAME : [-A-Za-z0-9]+;
 
-root: item*;
+root: item* trailing?;
+
+trailing: 'TRAILING' (LEVEL | NAME)*;
 
 item:
 	head

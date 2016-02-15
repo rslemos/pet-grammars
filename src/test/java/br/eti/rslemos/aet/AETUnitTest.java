@@ -23,7 +23,9 @@ public class AETUnitTest {
 				"3 node-011",
 				"2 node-02",
 				"1 node-1",
-				"2 node-10"
+				"2 node-10",
+				"TRAILING",
+				"Now come some garbage just to prove that ambiguity goes as far as input looks like a head"
 			);
 		
 		AETGrammarParser parser = AETGrammarParser.getParser(source);
@@ -47,7 +49,8 @@ public class AETUnitTest {
 					+ ") "
 					+ "(item (head 1 node-1) "
 						+ "(item (head 2 node-10))"
-					+ ")"
+					+ ") "
+					+ "(trailing TRAILING Now come some garbage just to prove that ambiguity goes as far as input looks like a head)"
 				+ ")"
 			)));
 	}
