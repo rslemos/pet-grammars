@@ -25,6 +25,31 @@
 		<uberjar.name>benchmarks</uberjar.name>
 	</properties>
 
+	<dependencies>
+		<dependency>
+			<groupId>br.eti.rslemos.petgrammars</groupId>
+			<artifactId>g</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>br.eti.rslemos.petgrammars</groupId>
+			<artifactId>g</artifactId>
+			<version>${project.version}</version>
+			<classifier>tests</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.openjdk.jmh</groupId>
+			<artifactId>jmh-core</artifactId>
+			<version>${jmh.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.openjdk.jmh</groupId>
+			<artifactId>jmh-generator-annprocess</artifactId>
+			<version>${jmh.version}</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
 	<build>
 		<plugins>
 			<plugin>

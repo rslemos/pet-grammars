@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/pet-grammars/src/test/java/br/eti/rslemos/petgrammars/ExplicitTreeBenchmark.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
+<stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/java-7-openjdk-amd64"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="br.eti.rslemos.petgrammars.ExplicitTreeBenchmark"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-XX:PrintAssemblyOptions=intel,mpad=10,cpad=10,code&#10;-XX:+PrintCompilation -verbose:gc -Xbatch -XX:CICompilerCount=1&#10;-XX:+UnlockDiagnosticVMOptions -XX:+PrintAssembly &#10;-XX:+LogCompilation"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="pet-grammars"/>
+<stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
+</launchConfiguration>
