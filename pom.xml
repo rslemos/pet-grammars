@@ -13,6 +13,7 @@
 
 	<modules>
 		<module>g</module>
+		<module>benchmarks</module>
 	</modules>
 	
 	<properties>
