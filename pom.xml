@@ -12,6 +12,7 @@
 	<packaging>pom</packaging>
 
 	<modules>
+		<module>l</module>
 		<module>g</module>
 		<module>benchmarks</module>
 	</modules>

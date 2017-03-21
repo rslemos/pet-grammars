@@ -1,4 +1,6 @@
-grammar ExplicitTree;
+parser grammar ExplicitTreeParser;
+
+options { tokenVocab = ExplicitTreeLexer; }
 
 @parser::members {
 	public boolean buildHierarchy = true;
@@ -27,14 +29,9 @@ grammar ExplicitTree;
 	}
 }
 
-WS : (' '|'\n') -> channel(HIDDEN);
-
-LEVEL : [0-9]+;
-NAME : [-A-Za-z0-9]+;
-
 root: item* trailing?;	
 
-trailing: 'TRAILING' (LEVEL | NAME)*;
+trailing: TRAILING (LEVEL | NAME)*;
 
 item:
 	head
